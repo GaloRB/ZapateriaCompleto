@@ -1,0 +1,95 @@
+    body {
+        background-color: rgb(238, 235, 231) !important;
+        font-family: 'Archivo', sans-serif !important;
+        margin-bottom: 8rem !important;
+    }
+    
+    h1 {
+        font-family: 'Ballet', cursive !important;
+        font-size: 4rem !important;
+    }
+    
+    footer {
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+    }
+    /* ------------------- INDEX ---------------*/
+    
+    input {
+        border: 2px solid black;
+        font-size: 1rem;
+        margin: 1.5rem;
+        padding: 0.5rem;
+    }
+    
+    .form-login {
+        font-family: 'Andika New Basic', sans-serif;
+        margin: 5rem;
+        text-align: right;
+        width: 40%;
+    }
+    /*#InicioSesion {
+    background: black;
+    color: white;
+    font-size: 1rem;
+    margin: 1.5rem;
+    padding: 0.5rem;
+}*/
+    
+    h3 {
+        color: red;
+        font-family: 'Andika New Basic', sans-serif;
+        text-align: right;
+    }
+    
+    .imagen-zapatos {
+        margin: 1rem 15rem;
+    }
+    
+    .navbar-nav a {
+        transition: all 0.3s ease;
+    }
+    
+    .navbar-nav a:hover {
+        background-color: burlywood;
+        border-radius: 35px;
+    }
+    
+    .carousel-item img {
+        height: 18rem;
+        max-height: 20rem;
+        text-align: center;
+    }
+    
+    .texto p {
+        font-size: 1.2rem !important;
+        margin-top: 1rem !important;
+    }
+    
+    .texto span {
+        font-weight: 700;
+    }
+    
+    .texto a {
+        transition: all 0.3s ease;
+    }
+    
+    .texto a:hover {
+        background-color: burlywood;
+        border-radius: 35px;
+    }
+    /* ------------ crear venta ---------------*/
+    
+    #costo {
+        display: none;
+    }
+    
+    #respuesta {
+        display: none;
+    }
+    
+    a {
+        text-decoration: none !important;
+    }
