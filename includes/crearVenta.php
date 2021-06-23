@@ -61,6 +61,10 @@ require ('../config/conection.php');
             <div class="d-flex justify-content-center">
                 <button  type="submit" id="venta" name="venta" class="btn btn-primary">Generar Costo</button>
             </div>
+
+            <div class="d-flex justify-content-center">
+                <button  type="submit" id="ventaVoz" name="venta" class="btn btn-primary mt-1">Generar Costo Por Voz</button>
+            </div>
             
         </form>
             <div class="d-flex justify-content-center mt-3">

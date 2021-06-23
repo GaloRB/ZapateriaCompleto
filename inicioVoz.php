@@ -1,11 +1,3 @@
-<?php
-    session_start();
-    if(isset($_SESSION["autenticado"]) || isset($_SESSION["usuario"])){
-		session_destroy();
-		header("Location:index.php");
-    }else{
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -30,17 +22,15 @@
     	<br>
 		<img src="imagenes/Inicio1.jpg" alt="imagenInicio"  width="600" height="400" align="right">
 		<form class="form-login" id="form" action="" method="POST">
-			USUARIO:
-			<input id="usuario" type="text" name="usuario" required>
-			<br>
-			<br>
-			CONTRASEÑA:
-			<input id="password" type="password" name="password" required>
-			<br>
-			<br>
 			
-			<input id="InicioSesion" class="btn btn-dark my-0 mx-auto fs-5" type="submit" name="submit" value="Iniciar Sesion">
-			<button type="button" class="btn btn-dark m-2 fs-5"><a href="inicioVoz.php" class="badge badge-dark">Iniciar sesión con voz</a></button>
+            <div class="d-flex justify-content-center flex-column mt-4">
+                    <!-- <input type="text" class="texto">
+                    <button class="btn btn-leer">pulsar para leer..</button> -->
+                <button type="button" class="btn btn-grabar btn-secondary fs-4">pulsar para Grabar...</button>
+                <p class="contenido pt-5 fs-1"></p>
+            </div>
+			
+			<button type="button" class="btn btn-dark m-2 fs-5"><a href="index.php" class="badge badge-dark">Inicio Normal</a></button>
 			<div class="tex-center d-flex justify-content-around">
 
 				
@@ -59,12 +49,9 @@
 		</form>
 		
 		</p>
-	<script src="js/scripts.js"></script>
+	
+    <script src="js/inicioVoz.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
 
 </body>
 </html>
-
-<?php
-	}
-?>	
