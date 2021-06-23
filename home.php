@@ -14,22 +14,22 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item px-5">
                         <a class="nav-link active text-center text-light h5" aria-current="page" href="ventas.php">
-                            <img src="Imagenes/shop.ico">Ventas</a>
+                            <img src="imagenes/shop.ico">Ventas</a>
                     </li>
 
                     <li class="nav-item px-5">
                         <a class="nav-link text-light h5" href="inventario.php">
-                            <img src="Imagenes/inventario1.ico"> Inventario</a>
+                            <img src="imagenes/inventario1.ico"> Inventario</a>
                     </li>
                         
                     <li class="nav-item px-5">
                         <a class="nav-link text-light h5" href="includes/tablaingresos.php">
-                            <img src="Imagenes/ingresos.ico"> Ingresos</a>
+                            <img src="imagenes/ingresos.ico"> Ingresos</a>
                     </li>
 
                     <li class="nav-item px-5">
                         <a class="nav-link active text-center text-light h5" href="includes/usuarios.php">
-                          <img src="Imagenes/inventario1.ico"> Control de Usuarios</a>
+                          <img src="imagenes/inventario1.ico"> Control de Usuarios</a>
                   </li>
                 </ul>
             </div>

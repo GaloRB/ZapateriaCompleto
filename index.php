@@ -17,7 +17,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" href="Imagenes/Icono.png">
+	<link rel="shortcut icon" href="imagenes/Icono.png">
 	<link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
@@ -28,7 +28,7 @@
     </nav>
     <p> 
     	<br>
-		<img src="Imagenes/inicio1.jpg" alt="imagenInicio"  width="600" height="400" align="right">
+		<img src="imagenes/Inicio1.jpg" alt="imagenInicio"  width="600" height="400" align="right">
 		<form class="form-login" id="form" action="" method="POST">
 			USUARIO:
 			<input id="usuario" type="text" name="usuario" required>
