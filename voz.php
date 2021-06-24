@@ -37,8 +37,10 @@ require ('config/conection.php');
     <div class="d-flex justify-content-center flex-column mt-4">
             <!-- <input type="text" class="texto">
             <button class="btn btn-leer">pulsar para leer..</button> -->
-        <button type="button" class="btn btn-grabar btn-secondary fs-4">pulsar para Grabar..</button>
+        <button type="button" class="btn btn-grabar btn-secondary fs-4 btn-leer">pulsar para buscar por categoria..</button>
         <p class="contenido pt-5 fs-1"></p>
+        <!-- <button type="button" class="btn btn-grabarM btn-secondary fs-4 btn-leerM">pulsar para buscar por marca..</button>
+        <p class="contenidoM pt-5 fs-1"></p> -->
     </div>
 
        
@@ -51,7 +53,7 @@ require ('config/conection.php');
 
          
          <script src="js/bootstrap.bundle.js"></script>
-         <script src="js/leer.js"></script>
+         <!-- <script src="js/grabarMarca.js"></script>  -->  
          <script src="js/grabar.js"></script>
          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>

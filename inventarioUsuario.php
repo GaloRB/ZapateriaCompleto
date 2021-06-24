@@ -36,22 +36,22 @@
                     <br>
                     <li class="nav-item px-5">
                         <a class="nav-link active text-center text-light h5" aria-current="page" href="usuario/disponibles.php">
-                            <img src="Imagenes/shop.ico"> Consultar disponibles</a>
+                            <img src="imagenes/shop.ico"> Consultar disponibles</a>
                     </li>
                     <br>
                     <li class="nav-item px-5">
                         <a class="nav-link active text-center text-light h5" href="usuario/agotados.php">
-                            <img src="Imagenes/inventario1.ico"> Consultar agotados</a>
+                            <img src="imagenes/inventario1.ico"> Consultar agotados</a>
                     </li>
 
                     <li class="nav-item px-5">
                         <a class="nav-link active text-center text-light h5" href="usuario/proveedores.php">
-                            <img src="Imagenes/ingresos.ico"> Consultar proveedores</a>
+                            <img src="imagenes/ingresos.ico"> Consultar proveedores</a>
                     </li>
 
                     <li class="nav-item px-5">
                         <a class="nav-link active text-center text-light h5" aria-current="page" href="ventasUsuario.php">
-                        <img src="Imagenes/shop.ico"> Ventas</a>
+                        <img src="imagenes/shop.ico"> Ventas</a>
                     </li>
 
                 </ul>

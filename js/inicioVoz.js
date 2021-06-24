@@ -3,14 +3,28 @@ const btnGrabarTexto = document.querySelector('.btn-grabar')
     /* Primero creamos los objetos para poder grabar nuestra voz con el microfono */
 const reconocimientoVoz = window.SpeechRecognition || window.webkitSpeechRecognition
 const reconocimiento = new reconocimientoVoz()
-    /* metodo que se ejecuta al empezar a granar */
+
+
+/* Selector para leer texto */
+const btnLeerTexto = document.querySelector('.btn-leer')
+
+/* Fucnion para leer texto */
+btnLeerTexto.addEventListener('click', () => {
+    const locutor = new SpeechSynthesisUtterance()
+    const voz = window.speechSynthesis
+        /* console.log(texto.value) */
+    locutor.text = 'Di tu palabra clave';
+    voz.speak(locutor)
+})
+
+/* metodo que se ejecuta al empezar a granar */
 reconocimiento.onstart = () => {
         contenido.innerHTML = 'Di tu palabra clave...'
     }
     /* Metodo que se ejecuta al terminar la grabación */
 reconocimiento.onresult = event => {
     let mensaje = event.results[0][0].transcript
-    contenido.innerHTML = 'Realizando busqueda...'
+    contenido.innerHTML = 'Iniciadno Sesión...'
     leerTextoCondicionado(mensaje)
 }
 
@@ -42,7 +56,7 @@ const leerTextoCondicionado = (mensaje) => {
                 }
             });
         voz.text = 'Sesión iniciada';
-    } else if (mensaje.includes('estefania')) {
+    } else if (mensaje.includes('Fanny')) {
         let datos = new FormData();
         datos.append("usuario", 'Estefania');
         fetch('recibirVoz.php', {
@@ -56,9 +70,9 @@ const leerTextoCondicionado = (mensaje) => {
                 }
             });
         voz.text = 'Sesión iniciada';
-    } else if (mensaje.includes('ramon')) {
+    } else if (mensaje.includes('Gabriel')) {
         let datos = new FormData();
-        datos.append("usuario", 'Ramon');
+        datos.append("usuario", 'JuanGabriel');
         fetch('recibirVoz.php', {
                 method: 'POST',
                 body: datos
@@ -67,6 +81,20 @@ const leerTextoCondicionado = (mensaje) => {
                 console.log(data);
                 if (data === 1) {
                     location.href = 'home.php';
+                }
+            });
+        voz.text = 'Sesión iniciada';
+    } else if (mensaje.includes('Ramón')) {
+        let datos = new FormData();
+        datos.append("usuario", 'Ramon');
+        fetch('recibirVoz.php', {
+                method: 'POST',
+                body: datos
+            }).then(Response => Response.json())
+            .then(({ data }) => {
+                console.log(data);
+                if (data === 2) {
+                    location.href = 'inventarioUsuario.php';
                 }
             });
         voz.text = 'Sesión iniciada';

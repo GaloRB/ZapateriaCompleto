@@ -3,9 +3,22 @@ const btnGrabarTexto = document.querySelector('.btn-grabar')
     /* Primero creamos los objetos para poder grabar nuestra voz con el microfono */
 const reconocimientoVoz = window.SpeechRecognition || window.webkitSpeechRecognition
 const reconocimiento = new reconocimientoVoz()
-    /* metodo que se ejecuta al empezar a granar */
+
+/* Selector para leer texto */
+const btnLeerTexto = document.querySelector('.btn-leer')
+
+/* Fucnion para leer texto */
+btnLeerTexto.addEventListener('click', () => {
+    const locutor = new SpeechSynthesisUtterance()
+    const voz = window.speechSynthesis
+        /* console.log(texto.value) */
+    locutor.text = 'Di el nombre el proveedo que buscar...';
+    voz.speak(locutor)
+})
+
+/* metodo que se ejecuta al empezar a granar */
 reconocimiento.onstart = () => {
-        contenido.innerHTML = 'Di el nombre el proveedo que buscas...'
+        contenido.innerHTML = 'Di el nombre el proveedo que buscar...'
     }
     /* Metodo que se ejecuta al terminar la grabación */
 reconocimiento.onresult = event => {
@@ -60,7 +73,6 @@ const leerTextoCondicionado = (mensaje) => {
         voz.text = 'Mostradno datos de proveedor';
     } else if (mensaje.includes('farfetch')) {
         let datos = new FormData();
-        datos.append("proveedor", 'Levis');
         datos.append("proveedor", 'Farfetch');
         fetch('recibirDatosProveedor.php', {
                 method: 'POST',

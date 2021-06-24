@@ -8,6 +8,10 @@ let costo = document.querySelector('#costo');
 let costoForm = document.querySelector('#costoForm');
 let aceptarVenta = document.querySelector('#aceptarVenta');
 let formVenta = document.querySelector('#formVenta');
+/* Selector para leer texto */
+const btnLeerTexto = document.querySelector('.btn-leer')
+
+
 
 
 venta.addEventListener('click', (e) => {
@@ -171,6 +175,11 @@ aceptarVenta.addEventListener('click', (e) => {
                 showConfirmButton: true,
 
             })
+            const locutor = new SpeechSynthesisUtterance()
+            const voz = window.speechSynthesis
+                /* console.log(texto.value) */
+            locutor.text = `Venta con codigo numero ${dataVenta} generada con exito`;
+            voz.speak(locutor)
             formVenta.reset();
             aceptarVenta.classList.add('invisible');
             costo.style.display = 'none';

@@ -1,8 +1,8 @@
 <?php
-require ('config/conection.php');
+require ('../config/conection.php');
 
     session_start();
-    if(!isset($_SESSION["autenticado"])){
+    if(!isset($_SESSION["usuario"])){
         header("Location:index.php");
         
     }else{
@@ -15,8 +15,8 @@ require ('config/conection.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="imagenes/Icono.png">
@@ -30,8 +30,8 @@ require ('config/conection.php');
     <div class="container-fluid mt-5 w-75">
     
     <div class="tex-center d-flex justify-content-around">
-        <h2>Proveedor</h2>
-        <button type="button" class="btn btn-dark m-2 fs-3"><a href="vozProveedor.php" class="badge badge-dark">Buscar con voz</a></button>
+        <h2>Productos disponibles</h2>
+        <button type="button" class="btn btn-dark m-2 fs-3"><a href="voz.php" class="badge badge-dark">Buscar con voz</a></button>
     </div>
 
     <div class="d-flex justify-content-center flex-column mt-4">
@@ -50,9 +50,9 @@ require ('config/conection.php');
     </footer>
 
          
-         <script src="js/bootstrap.bundle.js"></script>
+         <script src="../js/bootstrap.bundle.js"></script>
          
-         <script src="js/grabarProveedor.js"></script>
+         <script src="grabar.js"></script>
          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>

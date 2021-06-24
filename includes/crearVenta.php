@@ -68,7 +68,7 @@ require ('../config/conection.php');
             
         </form>
             <div class="d-flex justify-content-center mt-3">
-                <button  type="submit" id="aceptarVenta" name="aceptarVenta" class="btn btn-primary invisible">Aceptar</button>
+                <button  type="submit" id="aceptarVenta" name="aceptarVenta" class="btn btn-primary invisible bt-leer">Aceptar</button>
             </div>
     </div>
     

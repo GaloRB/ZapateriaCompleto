@@ -26,11 +26,12 @@
             <div class="d-flex justify-content-center flex-column mt-4">
                     <!-- <input type="text" class="texto">
                     <button class="btn btn-leer">pulsar para leer..</button> -->
-                <button type="button" class="btn btn-grabar btn-secondary fs-4">pulsar para Grabar...</button>
+                <button type="button" class="btn btn-grabar btn-secondary fs-4 btn-leer">pulsar para Grabar...</button>
                 <p class="contenido pt-5 fs-1"></p>
             </div>
 			
 			<button type="button" class="btn btn-dark m-2 fs-5"><a href="index.php" class="badge badge-dark">Inicio Normal</a></button>
+			<button type="button" class="btn btn-dark m-2 fs-5"><a href="inicioVoz.php" class="badge badge-dark">Iniciar sesión con voz</a></button>
 			<div class="tex-center d-flex justify-content-around">
 
 				

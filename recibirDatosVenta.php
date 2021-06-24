@@ -12,13 +12,15 @@ function generarVenta(){
         $result = mysqli_query($conn,$query);
         while($row=mysqli_fetch_array($result)){
             $stock = $row['Stock'];
+            $precio = $row['Precio'];
          }
+         $total = $precio*$unidades;
          if($result){
                 
             $query= "UPDATE productos SET Stock = '$stock' - '$unidades' WHERE Id = '$clave'";
             $res = mysqli_query($conn,$query);
            
-            $sql= "INSERT INTO factura (fecha,Id_producto,unidades) VALUES ('$fecha_actual', '$clave', '$unidades')";
+            $sql= "INSERT INTO factura (fecha,Id_producto,unidades,total) VALUES ('$fecha_actual', '$clave', '$unidades','$total')";
             $res2= mysqli_query($conn,$sql);
 
             $sql2 = "SELECT MAX(Id_factura) AS id FROM factura";

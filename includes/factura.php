@@ -1,7 +1,5 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+require ('../config/conection.php');
 require('../fpdf/fpdf.php');
 
 
@@ -39,7 +37,7 @@ function Footer()
 }
 
 
-require ('../config/conection.php');
+
 
 $codigo = $_POST['codigo'];
 

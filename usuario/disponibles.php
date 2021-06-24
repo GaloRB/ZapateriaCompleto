@@ -28,11 +28,14 @@ require ('../config/conection.php');
 <h1 class="text-center m-3">Declean Glamoure</h1>
 <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark border border-danger img-fluid">
     </nav>
-    <button type="button" class="btn btn-dark m-2"><a href="../inventarioUsuario.php" class="badge badge-dark">Regresar</a></button>
+    <button type="button" class="btn btn-dark m-2"><a href="../inventario.php" class="badge badge-dark">Regresar</a></button>
     <div class="container-fluid mt-5 w-75">
     
 
-<h2>Productos disponibles</h2>
+    <div class="tex-center d-flex justify-content-around">
+        <h2>Productos disponibles</h2>
+        <button type="button" class="btn btn-dark m-2 fs-3"><a href="voz.php" class="badge badge-dark">Buscar con voz</a></button>
+    </div>
         <table class="table table-striped table-hover">
              <thead>
                 <tr>
@@ -76,6 +79,7 @@ require ('../config/conection.php');
 
          
          <script src="../js/bootstrap.bundle.js"></script>
+         
          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>

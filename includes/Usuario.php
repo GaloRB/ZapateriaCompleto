@@ -32,15 +32,15 @@ function registrarUsuario(){
         if(buscarUsuarioRepetido($nombre,$conn) == 1){
             echo json_encode(array('data'=> 2));
         }else{
-            $sql="INSERT INTO alumnos (Nombre,Contraseña,tipoUsuario) VALUES ('$nombre','$password_hash','$TipoU')";
+            $sql="INSERT INTO alumnos (Nombre,Contraseña,tipoUsuario) VALUES ('$nombre','$password','$TipoU')";
             $result=mysqli_query($conn,$sql);
             
         
-            if(($result)){
+            if($result){
                 echo json_encode(array('data'=> 1));
                 
             }else{
-              echo json_encode(array('data'=> 0));
+              echo json_encode(array('data'=> $result));
             }
         }
         
@@ -106,7 +106,7 @@ function buscarUsuarioRepetido($nom,$conn){
     }
    
 
-    if(isset($_POST['nombre']) && !empty($_POST['nombre']) && isset($_POST['password']) && !empty($_POST['password'])){
+    if(isset($_POST['nombre']) && isset($_POST['password'])){
         registrarUsuario();
     }
 
